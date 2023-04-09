@@ -135,7 +135,10 @@ function darkMode(){
     modetext.innerText = "LIGHT";
     modeicon.src = "./assets/images/sun-icon.svg";
      searchedText.classList.add("paleholderClass");
-  
+    //  searchedText.value.style.color="white";("color").value;
+    // console.log(searchedText("color").value);
+
+  searchedText.style.color="white";
 }
 
 function lightMode(){
@@ -150,6 +153,6 @@ function lightMode(){
      modeicon.src = "./assets/images/moon-icon.svg";
     //  searchedText.style.color = "#4b6a9b";
     searchedText.classList.remove("paleholderClass");
-
+    searchedText.style.color="black";
 
 }
