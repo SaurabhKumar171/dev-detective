@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <title>Dev detective</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper dark-wrapper">
+
+         <div class="container">
+
+            <!-- Heading container -->
+              <div class="head">
+                  <p>DevDetective</p>
+                  <div id="btn-mode">
+                      <p id="mode-text">DARK</p>
+                      <div class="icon-container">
+                          <img id="mode-icon" src="./assets/images/moon-icon.svg" alt="" modeIcon>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!-- Search container -->
+             <div class="search-box">
+                <img src="assets/images/search-icon.svg" alt="" width="20px">
+                 <form class="search-form">
+                     <input type="text" class="" placeholder="Enter a Github username..." data-enterName required>
+                     
+                      <!-- no results container  -->
+                      <div class="no-result" data-userNoResult >
+                         no search results
+                      </div>
+
+                     <button type="submit" class="btn-search" data-searchButton>Search</button>
+                 </form>
+
+                 
+             </div>
+
+            
+
+             <!-- Hero Section -->
+             <div class="hero">
+
+                <!-- profile img -->
+                <img src="" alt="" id="profile-pic" data-userAvtaar>
+
+                <!-- profile body -->
+
+                <div class="profile-body">
+                 <!-- Profile head -->
+                 <div class="profile-header">
+
+                    <div class="profile-name"> 
+                        <div>
+                            <h2 id="name" data-userName></h2>
+                            <p id="date" data-joinDate></p>
+                        </div>                                            
+                        <a href="" target="_blank" data-accountName></a>
+                        
+                     </div>
+                 </div>  
+                 
+                 <!-- Profile bio -->
+                 <div id="bio">
+                    <p data-profileBio></p>
+                 </div>
+
+                 <!-- profile stats -->
+                 <div id="profile-stats">
+                     <div class="stats repos"> 
+                         <p>Repos</p>
+                         <p data-repoCount></p>
+                     </div>
+                     <div class="stats followers"> 
+                        <p>Followers</p>
+                        <p data-followersCount></p>
+                     </div>
+                     <div class="stats following">
+                        <p>Following</p>
+                        <p data-followingCount></p>    
+                     </div>
+                 </div>
+                 
+                 <!-- footer -->
+                 <div class="profile-bottom-wrapper">
+                     <div class="profile-info">
+                        <img src="assets/images/location-icon.svg" alt="">
+                        <p id="location" data-location></p>
+                     </div>
+                     <div class="profile-info">
+                        <img src="assets/images/website-icon.svg" alt="">
+                         <a href="" target="_blank" id="website" class="icons" data-website></a>
+                     </div>
+                     <div class="profile-info">
+                        <img src="assets/images/twitter-icon.svg" alt="">
+                        <a href="" target="_blank" id="twitter-link" class="icons"  data-userTwitter></a>
+                     </div>
+                     <div class="profile-info">
+                        <img src="assets/images/company-icon.svg" alt="">
+                        <p id="target-tech" data-targetTechnology></p>
+                     </div>
+                 </div>
+
+                </div>
+              </div>
+         </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
