@@ -193,6 +193,7 @@
     /* text-align: center; */
     border-radius: 10px;
     padding: 1.8em;   
+    flex-wrap: wrap;
   }
 
   .stats p:nth-child(2){
@@ -232,3 +233,68 @@
     background-color:var(--lm-)
   } */
 
+
+  /* Tablets */
+  @media screen and (max-width: 770px) {
+    .container {
+      width: 573px;
+      height: 684px;
+    }
+
+    .profile-name div:first-child {
+      flex-direction: column;
+  }
+
+  .hero{
+    display: inline;
+  }
+
+  .profile-body{
+    margin-top: -29%;
+  }
+
+  #profile-pic{
+    margin-left: 71%;
+  }
+    
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 400px;
+      height: 684px;
+    }
+
+    input[type="text"]::placeholder{
+      font-size: 13px;
+    }
+
+    .btn-search {
+      min-width: 93px;
+      padding: 14px 16px;
+      font-size: 14px;
+  }
+
+  #profile-stats {
+    gap:4em;
+  }
+
+  .profile-bottom-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin-top: 3em;
+    gap: 2em;
+    padding-left: 1.7em;
+    font-size: larger;
+  }
+
+  .container {
+    top: 44%;
+  }
+    
+  }
+
+
+ 
