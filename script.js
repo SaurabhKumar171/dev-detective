@@ -24,7 +24,7 @@ const modeicon = document.querySelector("#mode-icon");
 // }
 
 // const inputField = document.querySelector("input[type='text']");
-
+ 
 
 searchedText.addEventListener("input", function () {
     noResults.style.display = "none";
