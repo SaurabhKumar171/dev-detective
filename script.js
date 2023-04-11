@@ -30,7 +30,7 @@ searchedText.addEventListener("input", function () {
     noResults.style.display = "none";
   });
 
-
+  
 function checkNull(text) {
      if(text === 'null' || text.length === 0){
         return false;
